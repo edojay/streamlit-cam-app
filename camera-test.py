@@ -5,4 +5,4 @@ picture = st.camera_input("eeeeey du e fetttt jobbi")
 
 if picture:
     st.image(picture)
-    Image.save(picture + '.png')
+    Image.save(picture, "png")
