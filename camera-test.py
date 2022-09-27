@@ -5,4 +5,9 @@ picture = st.camera_input("eeeeey du e fetttt jobbi")
 
 if picture:
     st.image(picture)
-    st.download_button('Download some text', picture)
+    btn = st.download_button(
+            label="spara bilden på din enhet",
+            data=picture,
+            file_name="dicpic.png",
+            mime="image/png"
+          )
